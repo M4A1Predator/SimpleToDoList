@@ -1,0 +1,25 @@
+.todo-container{
+    float: none; 
+    margin: 0 auto;
+}
+
+.todo-head{
+    text-align: center;
+}
+
+.todo-btn{
+    margin-top: 40px;
+}
+
+a.todo-check-pending{
+    color: #FDCA8B;
+}
+
+a.todo-check-done{
+    color: #1d58b8;
+}
+
+.input-title{
+    height: 48px;
+    font-size: 30px;
+}
