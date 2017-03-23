@@ -6,12 +6,16 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var morgan = require('morgan');
 var http = require('http');
+var helmet = require('helmet');
 
 // Config bodyParser
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 // Make app show access logs
 app.use(morgan('dev'));
+
+// Add helmet security middleware
+app.use(helmet());
 
 // Set port
 var port = 9000;

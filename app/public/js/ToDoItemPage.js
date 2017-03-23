@@ -97,7 +97,7 @@ class ToDoItemPage extends React.Component{
                 <div className="row">
                     <div className="col-md-8 todo-container">
                         <div className="col-md-6">
-                            <form>
+                            <form onSubmit={e => {e.preventDefault()}}>
                                 <div className="form-group">
                                     <input name="title" className="form-control input-title" type="text" placeholder="Title" 
                                         value={this.state.title} onChange={this.handleChange}/>

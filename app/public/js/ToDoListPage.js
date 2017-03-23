@@ -29,7 +29,7 @@ class ToDoItemBlock extends React.Component{
                 <div className="row">
                     <div className="col-md-8 todo-container">
                         <div className="col-md-7">
-                            <form>
+                            <form onSubmit={e => {e.preventDefault()}}>
                                 <div className="form-group">
                                     <input name="title" className="form-control" type="text" placeholder="Title" 
                                         value={this.state.title} onChange={this.handleChange}/>
@@ -244,7 +244,7 @@ class ToDoItemListPage extends React.Component{
             addForm = (
                         <div>
                             <div className="col-md-6">
-                                <form>
+                                <form onSubmit={e => {e.preventDefault()}}>
                                     <div className="form-group">
                                         <input name="title" className="form-control input-title" type="text" placeholder="Title" 
                                             value={this.state.title} onChange={this.handleChange}/>
