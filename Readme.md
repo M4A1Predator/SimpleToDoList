@@ -1,11 +1,34 @@
 # SimpleDotoList
     Simple To Do List web applicaiton
+    
     Technology: NodeJS, Express, React, Bootstrap
+    
+---
+## Installation
+    This application uses NodeJS and Express as Back-end. Logic code files are under /app/routes/api
+    Front-end code will be in folder /app/public.
+    The main file is "server.js".
+    
+#### Required
+    - NodeJS Version 6.9.2 or higher
+    - NPM Version 3.10.6
+    - MongoDB
+    
+#### How to install
+    - Clone this git repository
+    - Go to repo directory and run command "npm install"
+    - Set up MongoDB by create Database name "todo"
+    - Create DB account username: "todoDev" password: "360noscope" for DB "todo"
+    - Start server by run command "npm start"
+    
+#### Recommendation
+    - Default Database name is "todo"
+    - Default Database account is "user: todoDev, pwd: 360noscope"
+    - DB account can be changed in file server.js
+    - Default port is 9000. It can be changed in file server.js
 
 ---
-
-API Document
-====
+## API Document
 
 ### GET /api/items
 
@@ -41,8 +64,8 @@ API Document
 
 #### data params:
 	{
-		title: "title of to do item",
-		[detail]: "detail of item", // optional
+		title: "Title of to do item",
+		[detail]: "Detail of to do item", // optional
 	}
 
 #### Success repsonse:
