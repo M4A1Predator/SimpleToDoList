@@ -1,5 +1,13 @@
 # SimpleDotoList
     Simple To Do List web applicaiton
+    Features:
+        - Item consists of Title, Detail, and Status "pending" or "done"
+        - View all items
+        - View single item
+        - Add to do item
+        - Edit existing to do item
+        - Update item status
+        - Delete to do item
     
     Technology: NodeJS, Express, React, Bootstrap
     
@@ -52,7 +60,7 @@
 #### Error repsonse:
 	Code : 500
 	{
-		"err": "Something went wrong!"
+		"msg": "Something went wrong!"
 	}
 
 ---------------------------------
@@ -77,7 +85,7 @@
 #### Error repsonse:
 	Code : 500
 	{
-		"err": "Cannot add to do item"
+		"msg": "Cannot add to do item"
 	}
 
 ---------------------------------
@@ -100,7 +108,7 @@
 #### Error repsonse:
 	Code : 500
 	{
-		"err": "Something went wrong!"
+		"msg": "Something went wrong!"
 	}
 
 -------------------------------------
@@ -126,7 +134,11 @@
 #### Error repsonse:
 	Code : 500
 	{
-		"err": "Cannot update to do item"
+		"msg": "Cannot update to do item"
+	}
+	or
+	{
+	    "msg": "Item not found"
 	}
 	
 -------------------------------------
@@ -144,7 +156,7 @@
 #### Error repsonse:
 	Code : 500
 	{
-		"err": "Something went wrong!"
+		"msg": "Something went wrong!"
 	}
 	
 
